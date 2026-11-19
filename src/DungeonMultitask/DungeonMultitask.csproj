@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>DungeonMultitask</AssemblyName>
+    <RootNamespace>DungeonMultitask</RootNamespace>
+    <Version>1.0.0</Version>
+    <Product>Dungeon Multitask</Product>
+    <AssemblyTitle>Dungeon Multitask</AssemblyTitle>
+    <Description>Keeps extra Melvor Idle 2 actions running as you clear dungeons. Opens with F5. Requires Melvor Mod Loader.</Description>
+    <Copyright>MIT License. Copyright (c) 2026 Brooks-Wallace and falorfrozen</Copyright>
+    <Nullable>enable</Nullable>
+    <DebugType>none</DebugType>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\vendor\Style.cs" Link="Style.cs" />
+    <Compile Include="..\..\vendor\Targets.cs" Link="Targets.cs" />
+    <Reference Include="MelvorModLoader"><HintPath>$(LoaderDir)\MelvorModLoader.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="GodotSharp"><HintPath>$(GameData)\GodotSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="GamesByMalcs.Melvor2"><HintPath>$(GameData)\GamesByMalcs.Melvor2.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
